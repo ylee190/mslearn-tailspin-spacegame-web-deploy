@@ -17,7 +17,11 @@ stages:
   - job: 'Build'
     displayName: 'Build job'
     pool:
-      vmImage: 'ubuntu-20.04'
+      pool:
+      #vmImage: 'ubuntu-20.04'
+      name: 'default'
+      vmImage: 'BESTLYMHOME'
+      #vmImage: 'ubuntu-20.04'
       demands:
       - npm
 
