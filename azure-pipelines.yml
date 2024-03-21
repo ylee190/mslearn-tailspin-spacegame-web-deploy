@@ -125,6 +125,6 @@ stages:
             inputs:
               azureSubscription: 'Azure for Students(20ce1337-6d4a-451e-b11e-d5a2821b7e83)'
               appType: 'webAppLinux'
-              appName: '$(WebAppNameDev)'
+              appName: '$(WebAppNameStaging)'
               package: '$(Pipeline.Workspace)/drop/$(buildConfiguration)/*.zip'              
 
